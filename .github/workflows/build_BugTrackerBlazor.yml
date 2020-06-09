@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore BugTrackerBlazor.csproj
+      run: dotnet restore **/BugTrackerBlazor.csproj
     - name: Build
       run: dotnet build BugTrackerBlazor.csproj --configuration Release --no-restore
     - name: Test
